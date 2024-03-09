@@ -1,0 +1,31 @@
+/* Existing CSS styles */
+
+.about-content {
+    display: flex;
+    align-items: center;
+}
+
+.image {
+    width: 200px; /* Adjust size as needed */
+    height: 200px; /* Adjust size as needed */
+    background-color: #333; /* Example color */
+    margin-right: 20px;
+}
+
+.text {
+    opacity: 0;
+    transition: opacity 1s ease;
+}
+
+.animated {
+    animation: fadeIn 1s forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
